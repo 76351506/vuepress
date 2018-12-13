@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件 | 小程序学习手册</title>
+    <meta name="description" content="Vue 驱动的静态站点生成工具">
+    <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/styles.98f3297b.css" as="style"><link rel="preload" href="/assets/js/app.98f3297b.js" as="script"><link rel="preload" href="/assets/js/38.0d71ad0c.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.2ec4f90a.css"><link rel="prefetch" href="/assets/css/2.styles.c79e1fa7.css"><link rel="prefetch" href="/assets/css/3.styles.efaedfa7.css"><link rel="prefetch" href="/assets/css/4.styles.cddb6f2c.css"><link rel="prefetch" href="/assets/css/5.styles.7caa7290.css"><link rel="prefetch" href="/assets/js/1.2ec4f90a.js"><link rel="prefetch" href="/assets/js/10.c0e6261b.js"><link rel="prefetch" href="/assets/js/11.1ac5a50f.js"><link rel="prefetch" href="/assets/js/12.23151c5a.js"><link rel="prefetch" href="/assets/js/13.e1b33689.js"><link rel="prefetch" href="/assets/js/14.407380c5.js"><link rel="prefetch" href="/assets/js/15.73f925e6.js"><link rel="prefetch" href="/assets/js/16.c05a9876.js"><link rel="prefetch" href="/assets/js/17.1c7053fd.js"><link rel="prefetch" href="/assets/js/18.ac65dced.js"><link rel="prefetch" href="/assets/js/19.20cfae45.js"><link rel="prefetch" href="/assets/js/2.c79e1fa7.js"><link rel="prefetch" href="/assets/js/20.f4d86a65.js"><link rel="prefetch" href="/assets/js/21.72929d7d.js"><link rel="prefetch" href="/assets/js/22.1df2d1f5.js"><link rel="prefetch" href="/assets/js/23.8ea023fb.js"><link rel="prefetch" href="/assets/js/24.c5af4c1e.js"><link rel="prefetch" href="/assets/js/25.2a550a0b.js"><link rel="prefetch" href="/assets/js/26.48ad7c17.js"><link rel="prefetch" href="/assets/js/27.fec05349.js"><link rel="prefetch" href="/assets/js/28.55307e92.js"><link rel="prefetch" href="/assets/js/29.f8c13449.js"><link rel="prefetch" href="/assets/js/3.efaedfa7.js"><link rel="prefetch" href="/assets/js/30.67af1d04.js"><link rel="prefetch" href="/assets/js/31.9469df18.js"><link rel="prefetch" href="/assets/js/32.8fbc23d8.js"><link rel="prefetch" href="/assets/js/33.eec3d4e5.js"><link rel="prefetch" href="/assets/js/34.24e164c5.js"><link rel="prefetch" href="/assets/js/35.53e08221.js"><link rel="prefetch" href="/assets/js/36.ec11b9c7.js"><link rel="prefetch" href="/assets/js/37.9ff91143.js"><link rel="prefetch" href="/assets/js/39.8c84ba65.js"><link rel="prefetch" href="/assets/js/4.cddb6f2c.js"><link rel="prefetch" href="/assets/js/40.cb508571.js"><link rel="prefetch" href="/assets/js/41.3b742c3e.js"><link rel="prefetch" href="/assets/js/42.f6088ae6.js"><link rel="prefetch" href="/assets/js/43.0aade89f.js"><link rel="prefetch" href="/assets/js/44.f2d47cbd.js"><link rel="prefetch" href="/assets/js/45.2460ab6e.js"><link rel="prefetch" href="/assets/js/46.65c26d4d.js"><link rel="prefetch" href="/assets/js/47.3c45da60.js"><link rel="prefetch" href="/assets/js/48.9f198d53.js"><link rel="prefetch" href="/assets/js/49.1a1cbb1d.js"><link rel="prefetch" href="/assets/js/5.7caa7290.js"><link rel="prefetch" href="/assets/js/50.69212b6f.js"><link rel="prefetch" href="/assets/js/51.540c2771.js"><link rel="prefetch" href="/assets/js/52.e1f3d91a.js"><link rel="prefetch" href="/assets/js/53.23dc1f55.js"><link rel="prefetch" href="/assets/js/54.ece449f8.js"><link rel="prefetch" href="/assets/js/55.3a31134b.js"><link rel="prefetch" href="/assets/js/56.4d90a52a.js"><link rel="prefetch" href="/assets/js/57.ce3c62bb.js"><link rel="prefetch" href="/assets/js/58.f289468c.js"><link rel="prefetch" href="/assets/js/59.e6b08c30.js"><link rel="prefetch" href="/assets/js/6.cd9f7e7f.js"><link rel="prefetch" href="/assets/js/60.388e9a38.js"><link rel="prefetch" href="/assets/js/7.bc003cb1.js"><link rel="prefetch" href="/assets/js/8.c52e3010.js"><link rel="prefetch" href="/assets/js/9.055c3605.js">
+    <link rel="stylesheet" href="/assets/css/styles.98f3297b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小程序学习手册</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">nodejs</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">react</a></div><div class="nav-item"><a href="/wepy/" class="nav-link">wepy</a></div><div class="nav-item"><a href="/redux/" class="nav-link">redux</a></div><div class="nav-item"><a href="/miniProgram/" class="nav-link">小程序</a></div> <a href="https://github.com/docschina/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/nodejs/" class="nav-link">nodejs</a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">react</a></div><div class="nav-item"><a href="/wepy/" class="nav-link">wepy</a></div><div class="nav-item"><a href="/redux/" class="nav-link">redux</a></div><div class="nav-item"><a href="/miniProgram/" class="nav-link">小程序</a></div> <a href="https://github.com/docschina/vuepress" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <div class="carbon-ads"></div> <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>react</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/react/" class="sidebar-link">react</a></li><li><a href="/react/install.html" class="sidebar-link">安装</a></li><li><a href="/react/jsx.html" class="sidebar-link">jsx</a></li><li><a href="/react/component.html" class="active sidebar-link">组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/component.html#类定义组件" class="sidebar-link">类定义组件</a></li><li class="sidebar-sub-header"><a href="/react/component.html#函数定义组件" class="sidebar-link">函数定义组件</a></li><li class="sidebar-sub-header"><a href="/react/component.html#es5创建组件" class="sidebar-link">es5创建组件</a></li><li class="sidebar-sub-header"><a href="/react/component.html#注意事项" class="sidebar-link">注意事项</a></li></ul></li><li><a href="/react/router.html" class="sidebar-link">路由</a></li><li><a href="/react/communicate.html" class="sidebar-link">组件通讯</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="组件"><a href="#组件" aria-hidden="true" class="header-anchor">#</a> 组件</h1> <p>组件可以将UI切分成一些独立的、可复用的部件，这样你就只需专注于构建每一个单独的部件。</p> <p><strong>组件从概念上看就像是函数，它可以接收任意的输入值（称之为“props”），并返回一个需要在页面上展示的React元素</strong></p> <div class="language-md extra-class"><pre class="language-md"><code>react 组件的名称，首字母一律大写，并且使用驼峰写法
+</code></pre></div><h2 id="类定义组件"><a href="#类定义组件" aria-hidden="true" class="header-anchor">#</a> 类定义组件</h2> <ul><li>如果没有组件私有状态(state)需要去定义，根据es6 class的原则，可以省略不写constructor</li></ul> <div class="language-jsx extra-class"><pre class="language-jsx"><code>	
+	<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+	<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span><span class="token punctuation">{</span>
+		
+		<span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token comment">//通过render方法渲染组件的模板</span>
+
+		<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token comment">// 解构了 Component,依然需要引入 React, 否则报错</span>
+	<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+	<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+		<span class="token comment">//通过render方法渲染组件的模板，并且render只能返回一个根节点元素</span>
+		<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+</code></pre></div><div class="language-jsx extra-class"><pre class="language-jsx"><code>	<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+	<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">&quot;react-dom&quot;</span><span class="token punctuation">;</span>
+	
+	<span class="token keyword">const</span> template <span class="token operator">=</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+	<span class="token keyword">const</span> element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;#app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>template<span class="token punctuation">,</span>element<span class="token punctuation">)</span>
+</code></pre></div><h2 id="函数定义组件"><a href="#函数定义组件" aria-hidden="true" class="header-anchor">#</a> 函数定义组件</h2> <p>函数定义组件又被称为无状态组件,<strong>下文一律称-无状态组件</strong></p> <p>该函数是一个有效的React组件，它接收一个单一的“props”对象并返回了一个React元素。我们之所以称这种类型的组件为函数定义组件，是因为从字面上来看，它就是一个JavaScript函数。</p> <p>定义组件时，render 返回的jsx模板如果有多个子节点，那么给组件的根节点元素最好用小括号包起来</p> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token keyword">const</span> <span class="token function-variable function">ProductList</span> <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+			<span class="token keyword">this</span> is productList
+			<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+</code></pre></div><h2 id="es5创建组件"><a href="#es5创建组件" aria-hidden="true" class="header-anchor">#</a> es5创建组件</h2> <div class="language- extra-class"><pre class="language-text"><code>	var ProductList = React.createClass({
+		render:function(){
+			return &lt;div&gt;
+				this is productList
+			&lt;/div&gt;
+		}	
+	})
+</code></pre></div><h2 id="注意事项"><a href="#注意事项" aria-hidden="true" class="header-anchor">#</a> 注意事项</h2> <ul><li><p>无状态组件prop不要通过this.props来调用</p></li> <li><p>无状态组件没有生命周期</p></li> <li><p>无状态组件不能定义定义状态（state）</p></li> <li><p>无状态组件不能实例化,组件名不能被 new</p></li> <li><p>无状态组件只能返回一个根节点元素</p></li> <li><p>类组件render函数，只能返回一个根节点元素</p></li> <li><p>类组件如果显式的声明了 constructor, 必须调用 super()</p></li></ul></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/react/jsx.html" class="prev">
+          jsx
+        </a></span> <span class="next"><a href="/react/router.html">
+          路由
+        </a>
+        →
+      </span></p></div> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></div> <!----></div></div>
+    <script src="/assets/js/app.98f3297b.js" defer></script><script src="/assets/js/38.0d71ad0c.js" defer></script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c3446600de53c605ba4f6c792e47dff9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>
